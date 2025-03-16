@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root{
+    /*Colors*/
+
+/*Primary*/
+
+--Dark-cyan: hsl(158, 36%, 37%);
+--Cream: hsl(30, 38%, 92%);
+
+/*Neutral*/
+
+--Very-dark-blue: hsl(152, 93%, 21%);
+--Dark-grayishblue: hsl(228, 12%, 48%);
+--White: hsl(0, 0%, 100%);
+--font-1: "Montserrat", serif;
+--font-2: "Fraunces", serif;
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+main{
+   max-width:100%;
+   height: 800px;
+    background-color: var(--Cream);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.mobile{
+    display: none;
+}
+
+.compu{
+    width: 18rem;
+    height: 29.9rem;
+    border-radius: 0.8rem 0rem 0rem 0.8rem;
+  
+}
+.content{
+    display:flex;
+    flex-direction: column;
+    width: 18rem;
+    height: 30rem;
+    background-color: var(--White);
+    padding: 2.3rem;
+   row-gap: 1.5rem;
+   font-family: var(--font-2);
+   border-radius: 0rem 0.8rem 0.8rem 0rem;
+}
+
+h3{
+    color: var(--Dark-grayishblue);
+    font-family: var(--font-2);
+   
+}
+
+h1{
+    color: var(--Very-dark-blue);
+    font-size: 2rem;
+}
+
+.primero{
+  
+    color: var(--Dark-grayishblue);
+    
+}
+
+.segundo{
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+    align-items: center;
+color: var(--Dark-cyan);
+font-size: 2rem;
+font-family: var(--font-1);
+}
+
+span{
+    color: var(--Dark-grayishblue);
+    font-size: 0.7rem;
+}
+button{
+    padding: 1rem 3rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: var(--Dark-cyan);
+    color: var(--White);
+    font-size: 0.9rem;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color:#09351d;
+}
+
+.imagen{
+    width:1rem;
+    height: 1rem;
+    margin-right: 0.6rem;
+}
+
+@media only screen and (max-width: 700px){
+    main{
+        width:25rem;
+        height: 70rem;
+         background-color: var(--Cream);
+         display: flex;
+         flex-direction: column;
+         justify-content: flex-start;
+         align-items: center;
+         padding: 1.5rem;
+        
+     }
+
+     .compu{
+        display: none;
+     }
+
+ 
+
+    .mobile{
+        display: flex;
+        width: 21rem;
+        height: 20rem;
+        border-radius: 0.8rem 0.8rem 0rem 0rem;
+      
+    }
+
+    .content{
+        display:flex;
+        flex-direction: column;
+        width: 21rem;
+        height: 25rem;
+        background-color: var(--White);
+        padding: 2.3rem;
+        margin: bottom 2rem;;
+       row-gap: 1.2rem;
+       font-family: var(--font-2);
+       border-radius: 0rem 0rem 0.8rem 0.8rem;
+    }
+}
